@@ -1,0 +1,92 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  background: rgb(226, 226, 226);
+  padding: 0;
+  margin: 0;
+}
+h1,
+p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.container{
+  width: 1000px;
+  height: 100%;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0px #6b6b6b;
+  overflow: hidden;
+}
+
+
+.sidebar{
+  float: left;
+  width: 300px;
+  height: 100%;
+  background: #29B6F6; 
+  box-sizing: border-box;
+}
+.sidebar p{
+  color: #fff;
+}
+.sidebar .title{
+  margin: 26px 0 20px;
+}
+.sidebar .title .userimg{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.sidebar .title .userimg img{
+  width: 100%;
+  background-size: cover;
+}
+.sidebar .title h1,
+.sidebar .title h2{
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  text-align: center;
+}
+.sidebar .title h1{
+  font-size: 26px;
+}
+.sidebar .title h2{
+  font-size: 18px;  
+}
+
+.s_detail{
+  margin: 0;
+  padding: 0;
+}
+.s_detail li{
+  list-style: none;
+  color: #fff;
+  margin: 10px 0 0 50px;
+}
+.s_detail li dt{
+  margin: 0;
+  padding: 0;
+}
+.s_detail li dd{
+  margin-left: 20px;
+  padding: 0;
+}
+.main{
+  width: 700px;
+  height: 100%;  
+  float: left;
+  background: #fff;
+}
