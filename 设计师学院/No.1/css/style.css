@@ -1,0 +1,40 @@
+.main{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto 0;
+    text-align: center;
+}
+
+.toogle-text,
+.toogle-click{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #000;    
+}
+.toogle-text::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    margin-left: 50%;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    
+}
+.toogle-click{
+    border-radius: 16px;
+    border: 1px solid #9a9a9a;
+    margin-top: 60px;
+    padding: 0px 20px;
+    box-shadow: 0 2px 2px 0px #e6e6e6;
+}
+.toogle-text:hover::after{
+    width: 100%;
+    margin-left: 0;
+}
