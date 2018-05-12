@@ -34,7 +34,16 @@
     padding: 0px 20px;
     box-shadow: 0 2px 2px 0px #e6e6e6;
 }
-.toogle-text:hover::after{
+
+.toogle-line{
+    color: rgb(0, 183, 255);
+}
+.toogle-line::after{
     width: 100%;
     margin-left: 0;
+    background-color: rgb(0, 183, 255);
 }
+/* .toogle-text:hover::after{
+    width: 100%;
+    margin-left: 0;
+} */
