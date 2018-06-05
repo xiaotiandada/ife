@@ -156,3 +156,6 @@ $(function(){
 [地址](http://ife.baidu.com/course/all)
 
 ---
+[预览地址](https://xiaotiandada.github.io/ife/%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E9%99%A2/No.3/index.html)
+
+[资料](http://ife.baidu.com/note/detail/id/418#)
