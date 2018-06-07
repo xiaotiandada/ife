@@ -165,8 +165,6 @@ $(function(){
 
 [地址](http://ife.baidu.com/course/all)
 
----
-
 [预览地址](https://xiaotiandada.github.io/ife/%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E9%99%A2/No.4/)
 
 [资料](http://www.zhangxinxu.com/study/201209/pictures-3d-slide-view.html)
