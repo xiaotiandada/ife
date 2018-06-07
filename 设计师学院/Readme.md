@@ -166,3 +166,61 @@ $(function(){
 [地址](http://ife.baidu.com/course/all)
 
 ---
+
+[预览地址](https://xiaotiandada.github.io/ife/%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E9%99%A2/No.4/)
+
+[资料](http://www.zhangxinxu.com/study/201209/pictures-3d-slide-view.html)
+
+[资料](http://ife.baidu.com/course/detail/id/31?t=1528373270979#learn)
+
+```bash
+# html
+<div class="container">
+<div class="box">
+<div class="positive"></div>
+<div class="negative"></div>
+</div>
+</div>
+# css
+
+.box{
+    position: relative;
+    width: 250px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: transform .8s ease-in-out;
+    -moz-transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+.positive,
+.negative{
+    width: 250px;
+    height: 380px;
+    background-size: cover;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.positive{
+    transform: rotateY(0deg);
+    background-image: url(../img/正面.jpg);
+}
+.negative{
+    background-image: url(../img/反面.jpg);
+    transform: rotateY(180deg);
+}
+
+.box:hover{
+    transform: rotateY(180deg);        
+}
+```
