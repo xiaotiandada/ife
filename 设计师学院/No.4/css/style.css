@@ -6,6 +6,8 @@ html,body{
     /* -webkit-perspective: 800px;
     -moz-perspective: 800px;
     perspective: 800px; */
+    width: 250px;
+    height: 380px;
 }
 
 
@@ -46,6 +48,6 @@ html,body{
     transform: rotateY(180deg);
 }
 
-.box:hover{
+.container:hover .box{
     transform: rotateY(180deg);        
 }
