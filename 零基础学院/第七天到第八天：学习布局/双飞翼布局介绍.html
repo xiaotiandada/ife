@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #bd {
+            padding: 0 230px 0 190px;
+        }
+
+        .main {
+            float: left;
+            width: 100%;
+        }
+
+        .sub {
+            float: left;
+            width: 190px;
+            margin-left: -100%;
+        }
+
+        .extra {
+            float: left;
+            width: 190px;
+            margin-left: -190px;
+        }
+
+        .sub {
+            float: left;
+            width: 190px;
+            margin-left: -100%;
+            position: relative;
+            left: -190px;
+        }
+
+        .extra {
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            position: relative;
+            right: -230px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="hd"></div>
+        <div id="bd">
+            <div class="main"></div>
+            <div class="sub"></div>
+            <div class="extra"></div>
+        </div>
+        <div id="ft"></div>
+    </div>
+</body>
+
+</html>

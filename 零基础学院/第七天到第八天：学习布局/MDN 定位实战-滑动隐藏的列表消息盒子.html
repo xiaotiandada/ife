@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        label[for="toggle"] {
+            font-size: 3rem;
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: -100px;
+        }
+
+        aside {
+            background-color: #a60000;
+            color: white;
+
+            width: 340px;
+            height: 98%;
+            padding: 10px 1%;
+
+            position: fixed;
+            top: 0;
+            right: -370px;
+
+            transition: 0.6s all;
+        }
+
+        input[type=checkbox]:checked+aside {
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="toggle">❔</label>
+    <input type="checkbox" id="toggle">
+    <aside>
+
+        probably go here. This is fake content. Your main web page contents would probably go here. This is fake content. Your main
+        web page contents would probably go here. This is fake content. Your main web page contents would probably go here.
+        This is fake content. Your main web page contents would probably go here. This is fake content. Your main web page
+        contents would probably go here. This is fake content. Your main web page contents would probably go here. This is
+        fake content. Your main web page contents would probably go here. Tab 1 Tab 2 Tab 3 The first tab Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. Vestibulum
+        et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis efficitur ut nec
+        nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend lorem, a auctor
+        libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.
+
+    </aside>
+</body>
+
+</html>
