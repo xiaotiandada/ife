@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .container {
+            padding: 0 300px 0 200px;
+        }
+
+        .main,
+        .left,
+        .right {
+            position: relative;
+            min-height: 200px;
+            float: left;
+        }
+
+        .left {
+            background: green;
+            width: 200px;
+            margin-left: -100%;         
+            left: -200px;   
+        }
+        .right{
+            background: red;
+            width: 300px;
+            margin-left: -300px;
+            right: -300px;
+        }
+        .main {
+            background: blue;
+            width: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat, amet ratione, impedit sed reprehenderit, quod repellendus praesentium laudantium nulla enim facere. Nam assumenda optio explicabo expedita quas aut nemo!</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

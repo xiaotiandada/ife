@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .container {
+        -webkit-display:flex;
+        display: flex;
+        min-height: 200px;
+    }
+    .left {
+        order: -1;
+        background: red;
+        flex-basis: 200px;
+    }
+    .main {
+        background: forestgreen;
+        flex-grow: 1;
+    }
+    .right{
+        background: gold;
+        flex-basis: 300px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae, veritatis dignissimos laborum debitis id accusantium dolore inventore odit sed! Sunt officiis temporibus esse eum ab fuga ad sequi officia?</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
