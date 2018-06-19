@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .left,.main,.right{
+        float: left;
+        position: relative;
+        min-height: 200px;
+    }
+
+    .left{
+        width: 200px;
+        background: red;
+    }
+
+    .main{
+        width: 200px;
+        background: green;
+    }
+    .right{
+        width: calc(100% - 400px );
+        background: gold;
+        margin-left: -100%;
+        left: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">left</div>
+        <div class="main">main</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorem eum odio inventore atque culpa omnis, provident corporis unde neque excepturi voluptas illum voluptates maiores autem aspernatur qui vero? Adipisci.</div>
+    </div>
+</body>
+</html>

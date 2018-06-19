@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .container {
+        padding: 0 200px;
+        overflow: hidden;
+    }
+
+    .left,.main,.right {
+        position: relative;
+        float: left;
+        min-height: 200px;
+    }
+
+    .left {
+        width: 200px;
+        background: red;
+        margin-left:-100%;
+        left: -200px;
+    }
+    .main {
+        width: 100%;
+        background: green;
+    }
+    .right{
+        width: 200px;
+        background: gold;
+        margin-right: -200px;
+        right: 0;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="content">
+
+            <div class="main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nulla ut suscipit excepturi? Eaque cumque cum explicabo nesciunt autem, labore sit fugiat hic. Illum ex sunt quis, voluptatibus delectus hic!</div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>
