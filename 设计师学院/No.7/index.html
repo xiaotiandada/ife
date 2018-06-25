@@ -59,6 +59,8 @@
             margin-bottom: 1.6rem;
             width: 100%;
             vertical-align: top;
+
+            
         }
 
         .form__wrapper__submit {
@@ -77,6 +79,27 @@
             outline: 0;
             border: none;
             border-bottom: solid 1px #ddd;
+        }
+
+        .form__wrapper::after{
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: rgb(7, 135, 255);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: -100%;
+
+            -webkit-transition: .28s;
+            -moz-transition: .28s;
+            -ms-transition: .28s;
+            -o-transition: .28s;
+            transition: .28s;
+        }
+
+        .form__wrapper__active::after{
+            margin-left: 0;
         }
 
         .form__input:-webkit-autofill {
