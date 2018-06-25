@@ -1,5 +1,9 @@
 ### ife 百度前端技术学院
 
+## [博客地址](https://xiaotiandada.github.io/)
+
+> 有些可以在文章里面看(懒得在这里写了hhh)
+
 ### No1
 
 [地址](http://ife.baidu.com/course/all)
