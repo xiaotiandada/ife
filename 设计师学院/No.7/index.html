@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            font-size: 1.8em;
+            line-height: 3;
+            background-color: #eee;
+        }
+
+        .site-container {
+            max-width: 320px;
+            margin: 10px auto;
+            padding-left: .6rem;
+            padding-right: .6rem;
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+            transition: .28s;
+        }
+
+        @media screen and (min-width: 60.063rem) {
+            .site-container {
+                max-width: 400px;
+            }
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-bottom: 3rem;
+            line-height: 1.5;
+            font-weight: 800;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24), 0 1px 18px 0 rgba(0, 0, 0, .12);
+            border-radius: 2px;
+            padding: 1em 1.5em;
+        }
+
+        .form__wrapper {
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin-bottom: 1.6rem;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .form__wrapper__submit {
+            padding: 1.6rem 0;
+        }
+
+        .form__input {
+            display: block;
+            position: relative;
+            margin-top: 1em;
+            padding: 0.84em 0;
+            width: 100%;
+            box-sizing: border-box;
+            color: #444;
+            font-size: 1.6rem;
+            outline: 0;
+            border: none;
+            border-bottom: solid 1px #ddd;
+        }
+
+        .form__input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+        }
+
+        .form__input:focus {
+            background-position: 0 0;
+            color: #444;
+        }
+
+        .form__label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            height: calc(99%);
+            text-align: left;
+            pointer-events: none;
+            color: #999;
+
+            -webkit-transition: .28s;
+            -moz-transition: .28s;
+            -ms-transition: .28s;
+            -o-transition: .28s;
+            transition: .28s;
+        }
+
+        .form__label__content {
+            position: absolute;
+        }
+
+        .btn {
+            width: 100%;
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            border-radius: 2px;
+            background-color: #2196f3;
+            color: #fff;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 1.6rem;
+            box-shadow: 0 1px 3px 0 rgba(3, 30, 51, .24),
+            0 1px 2px 0 rgba(3, 30, 51, .12);
+
+            -webkit-transform: all .2s ease;
+            -moz-transform: all .2s ease;
+            -ms-transform: all .2s ease;
+            -o-transform: all .2s ease;
+            transform: all .2s ease;
+        }
+
+        .btn:focus,
+        .btn:hover {
+            background-color: #0d8aee;
+        }
+
+
+        @-webkit-keyframes bounceIn {
+            from,
+            25%,
+            50%,
+            75%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            25% {
+                -webkit-transform: scale3d(1.01, 1.01, 1.01);
+                transform: scale3d(1.01, 1.01, 1.01);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.02, 1.02, 1.02);
+                transform: scale3d(1.02, 1.02, 1.02);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.01, 1.01, 1.01);
+                transform: scale3d(1.01, 1.01, 1.01);
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes bounceIn {
+            from,
+            25%,
+            50%,
+            75%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            25% {
+                -webkit-transform: scale3d(1.01, 1.01, 1.01);
+                transform: scale3d(1.01, 1.01, 1.01);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.02, 1.02, 1.02);
+                transform: scale3d(1.02, 1.02, 1.02);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.01, 1.01, 1.01);
+                transform: scale3d(1.01, 1.01, 1.01);
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        .bounceIn {
+            -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+            -webkit-animation-name: bounceIn;
+            animation-name: bounceIn;
+            animation-iteration-count: infinite;
+        }
+
+        .active {
+            -webkit-transform: scale(.9) translate(-14px, -14px);
+            -moz-transform: scale(.9) translate(-14px, -14px);
+            -ms-transform: scale(.9) translate(-14px, -14px);
+            -o-transform: scale(.9) translate(-14px, -14px);
+            transform: scale(.9) translate(-14px, -14px);
+        }
+    </style>
+
+    <!-- <link rel="stylesheet" href="./animate.css"> -->
+</head>
+
+<body>
+    <section class="site-container">
+        <section class="card">
+            <h3>Login</h3>
+            <form action="">
+                <div class="form__wrapper">
+                    <input type="email" class="form__input" id="email" name="email">
+                    <label id="form__label__email" class="form__label" for="email">
+                        <span class="form__label__content">Email</span>
+                    </label>
+                </div>
+
+                <div class="form__wrapper">
+                    <input type="password" class="form__input" id="password" name="password">
+                    <label id="form__label__password" class="form__label" for="password">
+                        <span class="form__label__content">Password</span>
+                    </label>
+                </div>
+
+                <div class="form__wrapper__submit">
+                    <div class="form__wrapper_submit__content">
+                        <button id="btn" type="submit" name="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <script src="./jquery-3.2.0.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
