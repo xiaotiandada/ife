@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+
+            background-color: #102131;
+
+            min-height: 100%;
+        }
+
+        .home-banner {
+            max-width: 1130px;
+            margin: 0 auto;
+            position: relative;
+
+            padding-top: 8%;
+
+        }
+
+
+        .home-banner-left {
+            width: 54%;
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
+
+        }
+
+        .home-banner-left h1 {
+            font-size: 48px;
+            line-height: 62px;
+            color: #fff;
+            font-weight: 800;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        .home-banner-left h1 b {
+            font-size: 53px;
+            margin-right: 5px;
+        }
+
+        .home-banner-left p {
+            color: rgba(255, 255, 255, .7);
+            font-size: 15px;
+            padding-right: 47px;
+            padding-left: 5px;
+            font-weight: 200;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+
+        .home-banner-right {
+            width: 62%;
+            margin-left: -8%;
+            margin-right: -300px;
+            vertical-align: top;
+            display: inline-block;
+            position: relative;
+        }
+
+        #bm {
+            max-width: 700px;
+            display: block;
+        }
+
+
+     
+
+        @media screen and (max-width: 768px) {
+            .home-banner {
+                padding-top: 2%;
+            }
+
+            .home-banner-left {
+                text-align: center;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+
+             .home-banner-right {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+           
+    </style>
+</head>
+
+<body>
+    <div class="home-banner">
+        <div class="home-banner-left">
+            <h1>
+                <b>ECharts</b>数据可视化实验室</h1>
+            <p>由百度 ECharts 团队创建，联合公司内外众多数据可视化从业人组成的技术研究虚拟组织，致力于数据可视化的相关研究、教育普及、产品研发及生态建设。</p>
+        </div>
+        <div class="home-banner-right">
+            <div id="bm"></div>
+        </div>
+    </div>
+
+    <script src="./lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('bm'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'test.json' // the path to the animation json
+        });
+    </script>
+</body>
+
+</html>
