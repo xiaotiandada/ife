@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.home-banner{
+    max-width: 1600px;
+    height: 990px;
+    background-color: #eee;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.home-banner-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(20, 20, 20, .65);
+}
+
+.home-banner-bg h1 {
+    font-size: 62px;
+    color: #fff;
+    text-align: center;
+    margin-top: 208px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.home-banner-bg p.home-banner-bg-p {
+    font-size: 20px;
+    color: #fff;
+    margin: 86px auto 0;
+    padding: 0 6%;
+    display: block;
+    max-width: 766px;
+    height: 84px;
+    text-align: center;
+}
+
+.home-banner-accout{
+    width: 972px;
+    height: 250px;
+    margin: 104px auto 0; 
+    border: solid 1px #fff;
+    border-radius: 2px;
+}
+
+.home-banner-accout h2.accout-h2,
+.home-banner-accout p.accout-p {
+    text-align: center;
+    color: #fff;
+}
+
+.home-banner-accout h2.accout-h2{
+    margin: 61px 0 0 0;
+    font-size: 16px;
+}
+.home-banner-accout p.accout-p {
+    margin: 19px 0 0 0;
+    font-size: 14px;
+}
+.accout-btn{
+    overflow: hidden;
+    padding-left: 94px;
+}
+.accout-btn-email,
+.accout-btn-password {
+    width: 293px;
+    height: 52px;
+    border: solid 1px #fff;
+    float: left;
+    margin-left: 29px;
+}
+
+.accout-btn-button{
+    width: 126px;
+    height: 52px;
+    margin-left: 30px;
+    float: left;
+}
+
+.accout-btn-email .email,
+.accout-btn-password .password {
+    display: block;
+    width: 100%;
+    color: #444;
+    font-size: 16px;
+    outline: 0;
+    border: none;
+}
