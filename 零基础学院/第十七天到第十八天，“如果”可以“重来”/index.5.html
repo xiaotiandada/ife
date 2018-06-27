@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var date = new Date()
+    var dateH = date.getHours()
+
+    if(dateH <= 8) {
+        console.log('早上好');
+    }  else if( dateH > 8 && dateH < 16 ) {
+        console.log('中午好');
+    } else if(dateH >= 16 && dateH < 24 ) {
+        console.log('晚上好');
+    }
+
+    </script>
+</body>
+</html>
