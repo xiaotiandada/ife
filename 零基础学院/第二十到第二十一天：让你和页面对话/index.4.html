@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .erik1,
+        .erik2,
+        .erik3,
+        .erik4,
+        .erik5,
+        .erik6,
+        .erik7,
+        .erik8,
+        .erik9,
+        .erik10,
+        .erik11,
+        .erik12,
+        .erik13,
+        .erik14,
+        .erik15,
+        .erik16,
+        .erik17 {
+            width: 480px;
+            height: 480px;
+            background-image: url(erik.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+
+        .erik1 {
+            background-position: 0 -0;
+        }
+
+        .erik2 {
+            background-position: 0 -480px;
+        }
+
+        .erik3 {
+            background-position: 0 -960px;
+        }
+
+        .erik4 {
+            background-position: 0 -1440px;
+        }
+
+        .erik5 {
+            background-position: 0 -1920px;
+        }
+
+        .erik6 {
+            background-position: 0 -2400px;
+        }
+
+        .erik7 {
+            background-position: 0 -2880px;
+        }
+
+        .erik8 {
+            background-position: 0 -3360px;
+        }
+
+        .erik9 {
+            background-position: 0 -3840px;
+        }
+
+        .erik10 {
+            background-position: 0 -4320px;
+        }
+
+        .erik11 {
+            background-position: 0 -4800px;
+        }
+
+        .erik12 {
+            background-position: 0 -5280px;
+        }
+
+        .erik13 {
+            background-position: 0 -5760px;
+        }
+
+        .erik14 {
+            background-position: 0 -6240px;
+        }
+
+        .erik15 {
+            background-position: 0 -6720px;
+        }
+
+        .erik16 {
+            background-position: 0 -7200px;
+        }
+
+        .erik17 {
+            background-position: 0 -7680px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="erik1" id="erik"></div>
+
+    <script>
+
+        window.onload = function () {
+            class Erik {
+                constructor() {
+                    this.classNameNum = 1
+                    this.erikObj = document.querySelector('#erik')
+                    this.timer = null
+                    this.flag = true
+                }
+
+                checkClassName() {
+                    let _this = this
+
+                    clearInterval(this.timer)
+
+                    this.timer = setInterval(function () {
+
+                        if(_this.flag){
+                            _this.classNameNum++
+                            if(_this.classNameNum==17){
+                                _this.flag = false
+                            }
+                        } else {
+                            _this.classNameNum--
+                            if(_this.classNameNum == 1) {
+                                _this.flag = true
+                            }
+                        }
+                        // console.log(_this.classNameNum)
+                        _this.erikObj.className = 'erik' + _this.classNameNum
+
+
+                    }, 60)
+
+
+                }
+            }
+
+            var erik = new Erik()
+            erik.checkClassName()
+        }
+
+    </script>
+</body>
+
+</html>
